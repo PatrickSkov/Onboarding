@@ -868,6 +868,389 @@
                                 "Send bekræftelse til underviser med antal deltagere og dit tlf.nr.",
                                 "Aftal med underviser hvornår de logger på Zoom (fx 20 min før)"
                             ]
+                        },
+                        {
+                            title: "På dagen",
+                            items: [
+                                "Luk for tilmelding i KURSUS",
+                                "Træk deltagerliste med telefonnumre",
+                                "Send SMS med Zoom-link en time før webinaret"
+                            ]
+                        },
+                        {
+                            title: "Klargøring af studiet",
+                            items: [
+                                "Medbring egen og webinar-computer samt USB",
+                                "Sørg for vand og kaffe til underviseren",
+                                "Tænd fjernsyn bag værtbordet",
+                                "Log in i Zoom – me@hk.dk kode: Allaner1gud",
+                                "Tjek for opdateringer i Zoom",
+                                "Åbn Zoom-mødet og gør webinarcomputer til co-host",
+                                "Tjek deltagernes rettigheder under 'Host tools'",
+                                "Juster lysindstillinger og bordets højde"
+                            ]
+                        },
+                        {
+                            title: "Under arrangementet",
+                            items: [
+                                "Tryk optag hvis webinaret skal optages",
+                                "Vært præsenterer og stiller spørgsmål fra chatten",
+                                "Teknik passer chatten og noterer relevante links",
+                                "Luk deltagere ind løbende",
+                                "Notér antal deltagere"
+                            ]
+                        },
+                        {
+                            title: "Efter arrangementet",
+                            items: [
+                                "Stop optagelsen og luk mødet",
+                                "Konfigurer optagelsen og læg på ME-drevet",
+                                "Ryd op i lokalet",
+                                "Skriv opsamlingsmail og sikr slides fra underviser",
+                                "Upload optagelse til Youtube hvis aftalt",
+                                "Træk ny liste og send opsamlingsmail (BCC)",
+                                "Kryds af i Planner"
+                            ]
+                        }
+                    ],
+                    relatedLinks: [
+                        { title: "Guide til Youtube upload", targetId: 10 },
+                        { title: "Deltagerliste i KURSUS", targetId: 4 },
+                        { title: "Eksempel på påmindelsesmail", targetId: 7 }
+                    ],
+                    externalLinks: []
+                }
+            },
+            {
+                id: 3,
+                title: "Tjekliste til fysiske arrangementer",
+                category: "fysisk",
+                description: "Køreplan for afvikling af fysiske kurser og arrangementer",
+                tags: ["lokale", "forplejning", "teknisk setup"],
+                content: {
+                    sections: [
+                        {
+                            title: "1-2 dage før",
+                            items: [
+                                "Tjek lokale i ME Outlook kalenderen eller Pronestor",
+                                "Træk deltagerliste med mails",
+                                "Send påmindelsesmail fra me@hk.dk med praktisk info",
+                                "Emma sørger for booking af lokale og forplejning",
+                                "Send bekræftelse til underviser med antal deltagere",
+                                "Tjek om der er bestilt mad til særlige kostbehov"
+                            ]
+                        },
+                        {
+                            title: "På dagen (i god tid)",
+                            items: [
+                                "Send sms til deltagerne to timer før",
+                                "Hent vogn til kabeltromler fra driften (hvis relevant)",
+                                "Tag relevant materiale med (flyer, papir, kuglepenne)",
+                                "Tjek borde og stole er opsat korrekt",
+                                "Tjek mikrofon, projektor og internet fungerer",
+                                "Sørg for materialer og strøm er tilgængelige",
+                                "Test præsentationen med underviseren"
+                            ]
+                        },
+                        {
+                            title: "Under arrangementet",
+                            items: [
+                                "Tag imod deltagerne og vær imødekommende",
+                                "Vær klar til at hjælpe med teknik",
+                                "Koordiner pauser og forplejning",
+                                "Brug pausen til at snakke og indsamle feedback",
+                                "Notér relevante links til opsamlingsmail",
+                                "Få opdaterede slides fra underviseren via USB"
+                            ]
+                        },
+                        {
+                            title: "Efter arrangementet",
+                            items: [
+                                "Ryd op i lokalet (affald, borde, stole)",
+                                "Sluk for teknik og returner udstyr",
+                                "Skriv opsamlingsmail og sikr slides fra underviser",
+                                "Send opsamlingsmail ud"
+                            ]
+                        }
+                    ],
+                    relatedLinks: [
+                        { title: "Forplejning - bestilling og info", targetId: 11 },
+                        { title: "Deltagerliste i KURSUS", targetId: 4 }
+                    ],
+                    externalLinks: []
+                }
+            },
+            {
+                id: 4,
+                title: "Guide til deltagerliste i KURSUS",
+                category: "admin",
+                description: "Trin-for-trin guide til at trække deltagerlister fra KURSUS systemet",
+                tags: ["kursus", "deltagerliste", "excel"],
+                content: {
+                    sections: [
+                        {
+                            title: "Sådan trækker du en deltagerliste",
+                            items: [
+                                "Åbn KURSUS og find arrangementet",
+                                "Vælg 'avanceret søgning' under fanen 'Modul' i værktøjslinjen",
+                                "Ryk vinduet en cm ned, så kursusnummeret er synligt",
+                                "Vælg 'Kursus deltagelse' i feltet 'søgetype'",
+                                "Udfyld kursusnummeret i 'Detailkursus Kode' (uden bindestreger)",
+                                "Skriv 'T' i feltet 'Tilmelding Status'",
+                                "Tryk 'Enter' på tastaturet",
+                                "Under fanen 'Fil' tryk 'Gem som'",
+                                "Gem filen som 'Excel12(*.xlsx) with headers'",
+                                "Navngiv filen 'Deltagerliste DATO'",
+                                "Åbn Excel-filen og formatér som tabel (blå, hvid og grå)",
+                                "Markér relevante felter (brug ctrl + Alt)",
+                                "Træk emails fra 'email' kolonnen (ctrl+shift+pil ned)",
+                                "Kopier og sæt ind i BCC i påmindelsesmailen"
+                            ]
+                        }
+                    ],
+                    relatedLinks: [
+                        { title: "Sådan sender du SMS", targetId: 5 },
+                        { title: "Tjekliste til webinarer", targetId: 2 }
+                    ],
+                    externalLinks: []
+                }
+            },
+            {
+                id: 5,
+                title: "Guide til SMS i CPSMS",
+                category: "kommunikation",
+                description: "Komplet vejledning til at sende SMS til deltagere via CPSMS systemet",
+                tags: ["sms", "cpsms", "deltagere"],
+                content: {
+                    sections: [
+                        {
+                            title: "Trin-for-trin vejledning",
+                            items: [
+                                "Træk ny deltagerliste fra KURSUS",
+                                "Find mobilnumre i mobilkolonne (kolonne V)",
+                                "Alfabetisér kolonnen for at sikre ingen numre mangler",
+                                "Kopier numre (ctrl+shift+pil ned) uden øverste linje",
+                                "Åbn et nyt Excel-ark og sæt numrene ind",
+                                "Gem som 'CSV (semikolonsepareret)(*.csv)' med navn 'smsliste DATO'",
+                                "Åbn CPSMS.dk og log ind",
+                                "Find 'GRUPPER' i værktøjslinjen",
+                                "Opret gruppe med navn+dato for sms",
+                                "Klik på importér-ikonet i gruppen",
+                                "Vælg din CSV-fil",
+                                "Hak af i 'kun danske numre' og klik 'IMPORTER'",
+                                "Gå til fanen 'SMS' og vælg 'GRUPPESMS'",
+                                "Ændr afsenderen fra 'HK Service' til 'HK'",
+                                "Skriv SMS-teksten",
+                                "Vælg modtagergruppe og ME SUPPORT",
+                                "Klik 'VIDERE TIL GODKENDELSE'",
+                                "Klik 'GODKEND UDSENDELSE'"
+                            ]
+                        }
+                    ],
+                    relatedLinks: [
+                        { title: "Eksempel på SMS-tekst", targetId: 8 },
+                        { title: "Deltagerliste i KURSUS", targetId: 4 }
+                    ],
+                    externalLinks: []
+                }
+            },
+            {
+                id: 6,
+                title: "Mailskabelon til oplægsholder",
+                category: "kommunikation",
+                description: "Eksempel på bekræftelses-mail når du HAR talt med oplægsholder",
+                tags: ["mail", "oplægsholder", "skabelon"],
+                content: {
+                    sections: [
+                        {
+                            title: "Mailskabelon",
+                            text: "Hej [navn],\n\nTak for en god samtale. Som aftalt skriver jeg for at opsummere vores aftale og sikre, at vi er enige om de praktiske detaljer.\n\nDato og tid\n• [Dato], kl. [tidspunkt]\n\nTitel\nNuværende titel, som evt. ændres: [titel]\n\nPraktisk info på dagen\n• Adresse: Svend Aukens Plads 11, 2300 København S\n• Når du ankommer, ring på tlf: 28433070, så kommer vi og henter dig\n• Kom i god tid, gerne 30 minutter før webinaret starter\n• Tag gerne tøj på uden for små mønstre eller helt hvidt – det fungerer ikke på skærmen\n\nAfvikling og slides\n• Webinaret afholdes via Zoom, og vi tager os af alt det praktiske\n• Vi byder medlemmerne velkommen og giver derefter ordet til dig\n• Vi har vedhæftet en PowerPoint-forside, som du gerne må bruge\n• Dine slides må du gerne sende senest dagen før\n\nBeskrivelse\nDu vil blive kontaktet af min kollega Rebekka, hvor I har en snak om indholdet. Hun er cc på denne mail.\n\nOptagelse\nVi har aftalt at webinaret bliver optaget og efterfølgende sendt ud i en tidsbegrænset periode.\n\nPris\nVi har aftalt, at prisen er [beløb] uden moms.\n\nVi tales ved, rigtig god dag!"
+                        }
+                    ],
+                    relatedLinks: [
+                        { title: "Booking af oplægsholder", targetId: 1 }
+                    ],
+                    externalLinks: []
+                }
+            },
+            {
+                id: 7,
+                title: "Påmindelsesmail til online arrangement",
+                category: "kommunikation",
+                description: "Eksempel på dagen-før-mail til webinar deltagere",
+                tags: ["mail", "webinar", "zoom"],
+                content: {
+                    sections: [
+                        {
+                            title: "Emnefelt",
+                            text: "HK // [titel på webinar] // link til Zoom"
+                        },
+                        {
+                            title: "Mailtekst",
+                            text: "Hej!\n\nVi glæder os til at byde dig velkommen i morgen til \"[titel]\".\n\nDet er kl. [xx-xx] på Zoom. Du kan logge på fra kl. [xx].\n\nLink til zoom: [link]\nMeeting ID: [id]\nPasscode: [code]\n\nOBS! Hvis du deltager fra en arbejdscomputer, kan Zoom blive blokeret pga. sikkerhedsindstillinger. Brug i stedet en privat enhed med mobil hotspot eller et andet Wi-Fi.\n\nZoom – sådan gør du:\nDownload Zoom inden webinaret: www.zoom.us/download\n\nDu kan også deltage via browser (Chrome, Safari, Edge) hvis download ikke er muligt.\n\nTablet eller telefon?\nDu SKAL downloade Zoom app'en for at kunne deltage.\n\nLydindstillinger\nHusk at klikke 'Join Audio' når du logger på.\n\nDriller teknikken? Ring til os på 2843 3070.\n\nVi ses på skærmen!"
+                        }
+                    ],
+                    relatedLinks: [
+                        { title: "Tjekliste til webinarer", targetId: 2 }
+                    ],
+                    externalLinks: []
+                }
+            },
+            {
+                id: 8,
+                title: "SMS-skabelon",
+                category: "kommunikation",
+                description: "Eksempel på SMS til deltagere",
+                tags: ["sms", "påmindelse"],
+                content: {
+                    sections: [
+                        {
+                            title: "SMS-tekst",
+                            text: "Hej! Vi glæder os til at se dig [DATO+tidspunkt] til [TITEL]\n\nLink til Zoom: [link]\nMeeting ID: [id]\nPasscode: [code]"
+                        }
+                    ],
+                    relatedLinks: [
+                        { title: "Guide til SMS i CPSMS", targetId: 5 }
+                    ],
+                    externalLinks: []
+                }
+            },
+            {
+                id: 9,
+                title: "Opsamlingsmail efter arrangement",
+                category: "kommunikation",
+                description: "Skabelon til opsamlingsmail efter webinar eller fysisk arrangement",
+                tags: ["mail", "opfølgning", "slides"],
+                content: {
+                    sections: [
+                        {
+                            title: "Husk at vedhæfte",
+                            items: [
+                                "Slides fra arrangementet",
+                                "Program-pdf hvis relevant",
+                                "Ekstra materiale nævnt på arrangementet"
+                            ]
+                        },
+                        {
+                            title: "Mailtekst eksempel",
+                            text: "Hej!\n\nTak, fordi du var med [titel]. Vi sender dig her [slides/materiale].\n\nOptagelsen finder du her: [link]\n\n[Skriv evt. gode pointer fra webinaret eller link til ekstra-materiale]\n\nHvis du vil se flere webinarer\nVi har vedhæftet programmet for de kommende måneder i denne mail.\n\nHer kan man fx se, at vi snart holder:\n• [Arrangement 1]\n• [Arrangement 2]\n• [Arrangement 3]\n\nVi håber, vi ses ved igen snart!\n\nDe bedste hilsner,\n[Dit navn]"
+                        }
+                    ],
+                    relatedLinks: [
+                        { title: "Tjekliste til webinarer", targetId: 2 },
+                        { title: "Tjekliste til fysiske arrangementer", targetId: 3 }
+                    ],
+                    externalLinks: []
+                }
+            },
+            {
+                id: 10,
+                title: "Upload til Youtube",
+                category: "admin",
+                description: "Guide til at uploade og konfigurere webinar-optagelser på Youtube",
+                tags: ["youtube", "optagelse", "video"],
+                content: {
+                    sections: [
+                        {
+                            title: "Trin-for-trin guide",
+                            items: [
+                                "Find optagelsen og klip den til (fjern evt. indflyvning)",
+                                "Gå til Youtube Studio i venstre værktøjslinje",
+                                "Tryk på 'Create' i øverste højre hjørne",
+                                "Klik på 'Upload videos'",
+                                "Upload din video",
+                                "Giv videoen en titel",
+                                "Skriv beskrivelse: 'webinar holdt DATO samt oplægsholders navn'",
+                                "Tilføj beskrivelse af webinaret",
+                                "Vælg thumbnail (kan være auto-genereret)",
+                                "Vælg eller opret relevant playliste",
+                                "Klik af i 'No, it's not made for kids'",
+                                "Klik 'Next' to gange",
+                                "Når copyright-check er færdig, klik 'Next' igen",
+                                "Under 'visibility' vælg 'unlisted'",
+                                "Klik 'Save' for at gemme"
+                            ]
+                        }
+                    ],
+                    relatedLinks: [
+                        { title: "Tjekliste til webinarer", targetId: 2 }
+                    ],
+                    externalLinks: []
+                }
+            },
+            {
+                id: 11,
+                title: "Forplejning - bestilling og info",
+                category: "fysisk",
+                description: "Guide til bestilling af forplejning til forskellige arrangementstyper",
+                tags: ["forplejning", "mad", "drikke"],
+                content: {
+                    sections: [
+                        {
+                            title: "Ansvarlig",
+                            text: "Emma er ansvarlig for booking af forplejning + lokale"
+                        },
+                        {
+                            title: "Almindelige fysiske kurser (17-20)",
+                            items: [
+                                "Kl. 16:45: Vand, kaffe og the",
+                                "Kl. 18: Måltidssalat (vegetar), sodavand, vand"
+                            ]
+                        },
+                        {
+                            title: "CV til samtale (9-15)",
+                            items: [
+                                "Kl. 8:45: Alm. croissant, kaffe og the, vand",
+                                "Kl. 12: Måltidssalat (vegetar), vand, sodavand - spises på 6. sal"
+                            ]
+                        },
+                        {
+                            title: "TechTirsdag (17-21)",
+                            items: [
+                                "Kl. 16:45: Kaffe og the (50%), vand",
+                                "Kl. 18: Dagens vegetar m. salat, sodavand, vand - spises på 6. sal",
+                                "Slik: Købes i Brugsen hvis man har tid"
+                            ]
+                        }
+                    ],
+                    relatedLinks: [
+                        { title: "Tjekliste til fysiske arrangementer", targetId: 3 }
+                    ],
+                    externalLinks: []
+                }
+            },
+            {
+                id: 12,
+                title: "Personalepolitik - Sygdom",
+                category: "generelt",
+                description: "Procedure ved sygdom",
+                tags: ["sygdom", "procedure", "mail"],
+                content: {
+                    sections: [
+                        {
+                            title: "Ved sygdom",
+                            text: "Når man bliver syg, sender man en mail til mailgruppen 'service-medlemsengagement'"
+                        }
+                    ],
+                    relatedLinks: [],
+                    externalLinks: []
+                }
+            },
+            {
+                id: 13,
+                title: "SOME regler og design",
+                category: "kommunikation",
+                description: "Design guidelines for sociale medier posts",
+                tags: ["some", "design", "farver"],
+                content: {
+                    sections: [
+                        {
+                            title: "Farvekombinationer",
+                            text: "Diverse kurser skiftes mellem forskellige farvekombinationer. Ved fakta-opslag skal overskrift og ikon være i samme farve. Farven vælges ud fra temaet. Hvis ikke den har et tema, skal lilla farve bruges."
+                        },
+                        {
+                            title: "Kurser til kategori blå, grøn og rød",
+                            text: "Baggrundsbillede skal altid laves i S/H inden farve kommer over. Opslag 1 og 2 må gerne bruges som startbillede eller komme efter hinanden i opslaget."
                         }
                     ],
                     relatedLinks: [],
