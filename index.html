@@ -4,33 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ME Onboarding Hub</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@600;700;800&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        :root {
-            --hk-cyan: #5DD3D1;
-            --hk-blue: #0078D2;
-            --hk-dark-blue: #005A9C;
-            --hk-orange: #FF9966;
-            --hk-pink: #FF6B9D;
-            --hk-light-pink: #FFB8D1;
-            --hk-peach: #FFD4B8;
-            --hk-light-cyan: #B8F3F2;
-            --hk-black: #1A1A1A;
-            --hk-gray: #6B6B6B;
-            --hk-light-gray: #F5F5F5;
-            --hk-white: #FFFFFF;
-        }
-
         body {
-            font-family: 'DM Sans', sans-serif;
-            background: linear-gradient(135deg, var(--hk-light-cyan) 0%, var(--hk-peach) 100%);
-            color: var(--hk-black);
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #B8F3F2 0%, #FFD4B8 100%);
+            color: #1A1A1A;
             min-height: 100vh;
             padding: 2rem;
         }
@@ -50,7 +36,7 @@
             font-family: 'Sora', sans-serif;
             font-size: 3.5rem;
             font-weight: 800;
-            background: linear-gradient(135deg, var(--hk-cyan), var(--hk-blue), var(--hk-pink));
+            background: linear-gradient(135deg, #5DD3D1, #0078D2, #FF6B9D);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -60,7 +46,7 @@
 
         .subtitle {
             font-size: 1.2rem;
-            color: var(--hk-gray);
+            color: #6B6B6B;
             font-weight: 500;
         }
 
@@ -74,9 +60,9 @@
             width: 100%;
             padding: 1.5rem 4rem 1.5rem 2rem;
             font-size: 1.1rem;
-            border: 3px solid var(--hk-cyan);
+            border: 3px solid #5DD3D1;
             border-radius: 20px;
-            background: var(--hk-white);
+            background: #FFFFFF;
             font-family: 'DM Sans', sans-serif;
             transition: all 0.3s ease;
             box-shadow: 0 10px 40px rgba(93, 211, 209, 0.2);
@@ -84,7 +70,7 @@
 
         .search-box:focus {
             outline: none;
-            border-color: var(--hk-blue);
+            border-color: #0078D2;
             box-shadow: 0 15px 50px rgba(0, 120, 210, 0.3);
             transform: translateY(-2px);
         }
@@ -95,7 +81,7 @@
             top: 50%;
             transform: translateY(-50%);
             font-size: 1.5rem;
-            color: var(--hk-cyan);
+            color: #5DD3D1;
         }
 
         .filters {
@@ -110,8 +96,8 @@
             padding: 0.75rem 1.5rem;
             border: none;
             border-radius: 30px;
-            background: var(--hk-white);
-            color: var(--hk-gray);
+            background: #FFFFFF;
+            color: #6B6B6B;
             font-family: 'DM Sans', sans-serif;
             font-size: 1rem;
             font-weight: 600;
@@ -126,8 +112,8 @@
         }
 
         .filter-btn.active {
-            background: linear-gradient(135deg, var(--hk-cyan), var(--hk-blue));
-            color: var(--hk-white);
+            background: linear-gradient(135deg, #5DD3D1, #0078D2);
+            color: #FFFFFF;
             box-shadow: 0 8px 25px rgba(93, 211, 209, 0.4);
         }
 
@@ -139,7 +125,7 @@
         }
 
         .card {
-            background: var(--hk-white);
+            background: #FFFFFF;
             border-radius: 20px;
             padding: 2rem;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
@@ -157,7 +143,7 @@
             left: 0;
             width: 100%;
             height: 5px;
-            background: linear-gradient(90deg, var(--hk-cyan), var(--hk-blue), var(--hk-pink), var(--hk-orange));
+            background: linear-gradient(90deg, #5DD3D1, #0078D2, #FF6B9D, #FF9966);
             transform: scaleX(0);
             transform-origin: left;
             transition: transform 0.4s ease;
@@ -183,22 +169,22 @@
             letter-spacing: 0.05em;
         }
 
-        .category-webinar { background: linear-gradient(135deg, var(--hk-cyan), var(--hk-light-cyan)); color: var(--hk-dark-blue); }
-        .category-fysisk { background: linear-gradient(135deg, var(--hk-orange), var(--hk-peach)); color: var(--hk-black); }
-        .category-admin { background: linear-gradient(135deg, var(--hk-pink), var(--hk-light-pink)); color: var(--hk-white); }
-        .category-kommunikation { background: linear-gradient(135deg, var(--hk-blue), var(--hk-dark-blue)); color: var(--hk-white); }
-        .category-generelt { background: linear-gradient(135deg, var(--hk-light-pink), var(--hk-peach)); color: var(--hk-black); }
+        .category-webinar { background: linear-gradient(135deg, #5DD3D1, #B8F3F2); color: #005A9C; }
+        .category-fysisk { background: linear-gradient(135deg, #FF9966, #FFD4B8); color: #1A1A1A; }
+        .category-admin { background: linear-gradient(135deg, #FF6B9D, #FFB8D1); color: #FFFFFF; }
+        .category-kommunikation { background: linear-gradient(135deg, #0078D2, #005A9C); color: #FFFFFF; }
+        .category-generelt { background: linear-gradient(135deg, #FFB8D1, #FFD4B8); color: #1A1A1A; }
 
         .card h3 {
             font-family: 'Sora', sans-serif;
             font-size: 1.5rem;
             margin-bottom: 0.75rem;
-            color: var(--hk-black);
+            color: #1A1A1A;
             font-weight: 700;
         }
 
         .card p {
-            color: var(--hk-gray);
+            color: #6B6B6B;
             line-height: 1.6;
             margin-bottom: 1rem;
         }
@@ -212,10 +198,10 @@
 
         .tag {
             padding: 0.3rem 0.75rem;
-            background: var(--hk-light-gray);
+            background: #F5F5F5;
             border-radius: 15px;
             font-size: 0.85rem;
-            color: var(--hk-gray);
+            color: #6B6B6B;
         }
 
         .modal {
@@ -239,7 +225,7 @@
         }
 
         .modal-content {
-            background: var(--hk-white);
+            background: #FFFFFF;
             border-radius: 30px;
             max-width: 900px;
             width: 100%;
@@ -258,7 +244,7 @@
             width: 40px;
             height: 40px;
             border: none;
-            background: var(--hk-light-gray);
+            background: #F5F5F5;
             border-radius: 50%;
             font-size: 1.5rem;
             cursor: pointer;
@@ -266,12 +252,12 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--hk-gray);
+            color: #6B6B6B;
         }
 
         .close-btn:hover {
-            background: var(--hk-pink);
-            color: var(--hk-white);
+            background: #FF6B9D;
+            color: #FFFFFF;
             transform: rotate(90deg);
         }
 
@@ -279,7 +265,7 @@
             font-family: 'Sora', sans-serif;
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
-            background: linear-gradient(135deg, var(--hk-cyan), var(--hk-pink));
+            background: linear-gradient(135deg, #5DD3D1, #FF6B9D);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -289,13 +275,13 @@
             font-family: 'Sora', sans-serif;
             font-size: 1.5rem;
             margin: 2rem 0 1rem 0;
-            color: var(--hk-blue);
+            color: #0078D2;
         }
 
         .content-section {
             margin-bottom: 2rem;
             line-height: 1.8;
-            color: var(--hk-black);
+            color: #1A1A1A;
         }
 
         .content-section ul {
@@ -305,7 +291,7 @@
 
         .content-section li {
             margin-bottom: 0.5rem;
-            color: var(--hk-gray);
+            color: #6B6B6B;
         }
 
         .video-container {
@@ -330,7 +316,7 @@
         .related-links {
             margin-top: 2rem;
             padding-top: 2rem;
-            border-top: 2px solid var(--hk-light-gray);
+            border-top: 2px solid #F5F5F5;
         }
 
         .related-links h3 {
@@ -341,18 +327,34 @@
             display: block;
             padding: 1rem;
             margin-bottom: 0.75rem;
-            background: var(--hk-light-gray);
+            background: #F5F5F5;
             border-radius: 10px;
             text-decoration: none;
-            color: var(--hk-blue);
+            color: #0078D2;
             transition: all 0.3s ease;
             font-weight: 500;
         }
 
         .link-item:hover {
-            background: var(--hk-cyan);
-            color: var(--hk-white);
+            background: #5DD3D1;
+            color: #FFFFFF;
             transform: translateX(10px);
+        }
+
+        .external-link {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem 0;
+            background: #0078D2;
+            color: #FFFFFF;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .external-link:hover {
+            background: #5DD3D1;
+            transform: translateX(5px);
         }
 
         .add-btn {
@@ -363,8 +365,8 @@
             height: 70px;
             border-radius: 50%;
             border: none;
-            background: linear-gradient(135deg, var(--hk-pink), var(--hk-orange));
-            color: var(--hk-white);
+            background: linear-gradient(135deg, #FF6B9D, #FF9966);
+            color: #FFFFFF;
             font-size: 2rem;
             cursor: pointer;
             box-shadow: 0 15px 40px rgba(255, 107, 157, 0.4);
@@ -382,7 +384,7 @@
             gap: 1rem;
             margin-top: 2rem;
             padding-top: 2rem;
-            border-top: 2px solid var(--hk-light-gray);
+            border-top: 2px solid #F5F5F5;
         }
 
         .edit-btn, .delete-btn {
@@ -397,8 +399,8 @@
         }
 
         .edit-btn {
-            background: linear-gradient(135deg, var(--hk-cyan), var(--hk-blue));
-            color: var(--hk-white);
+            background: linear-gradient(135deg, #5DD3D1, #0078D2);
+            color: #FFFFFF;
             flex: 1;
         }
 
@@ -408,8 +410,8 @@
         }
 
         .delete-btn {
-            background: linear-gradient(135deg, var(--hk-pink), var(--hk-orange));
-            color: var(--hk-white);
+            background: linear-gradient(135deg, #FF6B9D, #FF9966);
+            color: #FFFFFF;
         }
 
         .delete-btn:hover {
@@ -425,7 +427,7 @@
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 600;
-            color: var(--hk-black);
+            color: #1A1A1A;
         }
 
         .form-group input,
@@ -433,7 +435,7 @@
         .form-group select {
             width: 100%;
             padding: 0.75rem;
-            border: 2px solid var(--hk-light-gray);
+            border: 2px solid #F5F5F5;
             border-radius: 10px;
             font-family: 'DM Sans', sans-serif;
             font-size: 1rem;
@@ -444,7 +446,7 @@
         .form-group textarea:focus,
         .form-group select:focus {
             outline: none;
-            border-color: var(--hk-cyan);
+            border-color: #5DD3D1;
         }
 
         .form-group textarea {
@@ -457,13 +459,13 @@
             flex-wrap: wrap;
             gap: 0.5rem;
             padding: 0.5rem;
-            border: 2px solid var(--hk-light-gray);
+            border: 2px solid #F5F5F5;
             border-radius: 10px;
             min-height: 50px;
         }
 
         .tags-input-container:focus-within {
-            border-color: var(--hk-cyan);
+            border-color: #5DD3D1;
         }
 
         .tag-item {
@@ -471,8 +473,8 @@
             align-items: center;
             gap: 0.5rem;
             padding: 0.3rem 0.75rem;
-            background: var(--hk-cyan);
-            color: var(--hk-white);
+            background: #5DD3D1;
+            color: #FFFFFF;
             border-radius: 15px;
             font-size: 0.85rem;
         }
@@ -480,7 +482,7 @@
         .tag-item button {
             background: none;
             border: none;
-            color: var(--hk-white);
+            color: #FFFFFF;
             cursor: pointer;
             font-size: 1.2rem;
             line-height: 1;
@@ -514,8 +516,8 @@
         }
 
         .save-btn {
-            background: linear-gradient(135deg, var(--hk-cyan), var(--hk-blue));
-            color: var(--hk-white);
+            background: linear-gradient(135deg, #5DD3D1, #0078D2);
+            color: #FFFFFF;
         }
 
         .save-btn:hover {
@@ -524,68 +526,182 @@
         }
 
         .cancel-btn {
-            background: var(--hk-light-gray);
-            color: var(--hk-gray);
+            background: #F5F5F5;
+            color: #6B6B6B;
         }
 
         .cancel-btn:hover {
-            background: var(--hk-gray);
-            color: var(--hk-white);
-        }
-
-        .section-builder {
-            margin-top: 1rem;
-        }
-
-        .section-item {
-            background: var(--hk-light-gray);
-            padding: 1rem;
-            border-radius: 10px;
-            margin-bottom: 1rem;
-        }
-
-        .section-item h4 {
-            margin-bottom: 0.5rem;
-            color: var(--hk-blue);
-        }
-
-        .add-section-btn {
-            padding: 0.5rem 1rem;
-            background: var(--hk-cyan);
-            color: var(--hk-white);
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-            font-family: 'DM Sans', sans-serif;
-            font-weight: 600;
-            margin-top: 1rem;
-        }
-
-        .add-section-btn:hover {
-            background: var(--hk-blue);
-        }
-
-        .remove-section-btn {
-            padding: 0.3rem 0.75rem;
-            background: var(--hk-pink);
-            color: var(--hk-white);
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 0.85rem;
-            margin-top: 0.5rem;
-        }
-
-        .remove-section-btn:hover {
-            background: var(--hk-orange);
+            background: #6B6B6B;
+            color: #FFFFFF;
         }
 
         .no-results {
             text-align: center;
             padding: 4rem 2rem;
-            color: var(--hk-gray);
+            color: #6B6B6B;
             font-size: 1.2rem;
             animation: fadeIn 0.5s ease;
+        }
+
+        .checklist-item {
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: #F5F5F5;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .checklist-item::before {
+            content: '✓';
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: #5DD3D1;
+            color: #FFFFFF;
+            border-radius: 50%;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .step-number {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #0078D2, #5DD3D1);
+            color: #FFFFFF;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        /* Visuelt editor interface */
+        .section-builder {
+            background: #F5F5F5;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-item {
+            background: #FFFFFF;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+            border: 2px solid #E0E0E0;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .section-header h4 {
+            color: #0078D2;
+            font-family: 'Sora', sans-serif;
+        }
+
+        .add-section-btn, .add-item-btn {
+            padding: 0.5rem 1rem;
+            background: #5DD3D1;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .add-section-btn:hover, .add-item-btn:hover {
+            background: #0078D2;
+            transform: translateY(-2px);
+        }
+
+        .remove-btn {
+            padding: 0.3rem 0.75rem;
+            background: #FF6B9D;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+
+        .remove-btn:hover {
+            background: #FF9966;
+        }
+
+        .item-input {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #E0E0E0;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .item-input:focus {
+            outline: none;
+            border-color: #5DD3D1;
+        }
+
+        .link-builder {
+            background: #F5F5F5;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        .link-input-group {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .link-input-group input {
+            flex: 1;
+            padding: 0.75rem;
+            border: 2px solid #E0E0E0;
+            border-radius: 8px;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .add-link-btn {
+            padding: 0.75rem 1.5rem;
+            background: #0078D2;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .add-link-btn:hover {
+            background: #5DD3D1;
+        }
+
+        .link-list-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem;
+            background: #FFFFFF;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+
+        .link-list-item span {
+            color: #6B6B6B;
         }
 
         @keyframes fadeIn {
@@ -646,44 +762,6 @@
                 height: 60px;
                 font-size: 1.5rem;
             }
-        }
-
-        .checklist-item {
-            padding: 1rem;
-            margin: 0.5rem 0;
-            background: var(--hk-light-gray);
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-
-        .checklist-item::before {
-            content: '✓';
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 24px;
-            height: 24px;
-            background: var(--hk-cyan);
-            color: var(--hk-white);
-            border-radius: 50%;
-            font-weight: bold;
-            flex-shrink: 0;
-        }
-
-        .step-number {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 32px;
-            height: 32px;
-            background: linear-gradient(135deg, var(--hk-blue), var(--hk-cyan));
-            color: var(--hk-white);
-            border-radius: 50%;
-            font-weight: bold;
-            margin-right: 0.75rem;
-            flex-shrink: 0;
         }
     </style>
 </head>
@@ -767,7 +845,8 @@
                     relatedLinks: [
                         { title: "Tjekliste for webinarer", targetId: 2 },
                         { title: "Eksempel på mail til oplægsholder", targetId: 6 }
-                    ]
+                    ],
+                    externalLinks: []
                 }
             },
             {
@@ -789,458 +868,10 @@
                                 "Send bekræftelse til underviser med antal deltagere og dit tlf.nr.",
                                 "Aftal med underviser hvornår de logger på Zoom (fx 20 min før)"
                             ]
-                        },
-                        {
-                            title: "På dagen",
-                            items: [
-                                "Luk for tilmelding i KURSUS",
-                                "Træk deltagerliste med telefonnumre",
-                                "Send SMS med Zoom-link en time før webinaret"
-                            ]
-                        },
-                        {
-                            title: "Klargøring af studiet",
-                            items: [
-                                "Medbring egen og webinar-computer samt USB",
-                                "Sørg for vand og kaffe til underviseren",
-                                "Tænd fjernsyn bag værtbordet",
-                                "Log in i Zoom – me@hk.dk kode: Allaner1gud",
-                                "Tjek for opdateringer i Zoom",
-                                "Åbn Zoom-mødet og gør webinarcomputer til co-host",
-                                "Tjek deltagernes rettigheder under 'Host tools'",
-                                "Juster lysindstillinger og bordets højde"
-                            ]
-                        },
-                        {
-                            title: "Under arrangementet",
-                            items: [
-                                "Tryk optag hvis webinaret skal optages",
-                                "Vært præsenterer og stiller spørgsmål fra chatten",
-                                "Teknik passer chatten og noterer relevante links",
-                                "Luk deltagere ind løbende",
-                                "Notér antal deltagere"
-                            ]
-                        },
-                        {
-                            title: "Efter arrangementet",
-                            items: [
-                                "Stop optagelsen og luk mødet",
-                                "Konfigurer optagelsen og læg på ME-drevet",
-                                "Ryd op i lokalet",
-                                "Skriv opsamlingsmail og sikr slides fra underviser",
-                                "Upload optagelse til Youtube hvis aftalt",
-                                "Træk ny liste og send opsamlingsmail (BCC)",
-                                "Kryds af i Planner"
-                            ]
                         }
                     ],
-                    relatedLinks: [
-                        { title: "Guide til Youtube upload", targetId: 10 },
-                        { title: "Deltagerliste i KURSUS", targetId: 4 },
-                        { title: "Eksempel på påmindelsesmail", targetId: 7 }
-                    ]
-                }
-            },
-            {
-                id: 3,
-                title: "Tjekliste til fysiske arrangementer",
-                category: "fysisk",
-                description: "Køreplan for afvikling af fysiske kurser og arrangementer",
-                tags: ["lokale", "forplejning", "teknisk setup"],
-                content: {
-                    sections: [
-                        {
-                            title: "1-2 dage før",
-                            items: [
-                                "Tjek lokale i ME Outlook kalenderen eller Pronestor",
-                                "Træk deltagerliste med mails",
-                                "Send påmindelsesmail fra me@hk.dk med praktisk info",
-                                "Emma sørger for booking af lokale og forplejning",
-                                "Send bekræftelse til underviser med antal deltagere",
-                                "Tjek om der er bestilt mad til særlige kostbehov"
-                            ]
-                        },
-                        {
-                            title: "På dagen (i god tid)",
-                            items: [
-                                "Send sms til deltagerne to timer før",
-                                "Hent vogn til kabeltromler fra driften (hvis relevant)",
-                                "Tag relevant materiale med (flyer, papir, kuglepenne)",
-                                "Tjek borde og stole er opsat korrekt",
-                                "Tjek mikrofon, projektor og internet fungerer",
-                                "Sørg for materialer og strøm er tilgængelige",
-                                "Test præsentationen med underviseren"
-                            ]
-                        },
-                        {
-                            title: "Under arrangementet",
-                            items: [
-                                "Tag imod deltagerne og vær imødekommende",
-                                "Vær klar til at hjælpe med teknik",
-                                "Koordiner pauser og forplejning",
-                                "Brug pausen til at snakke og indsamle feedback",
-                                "Notér relevante links til opsamlingsmail",
-                                "Få opdaterede slides fra underviseren via USB"
-                            ]
-                        },
-                        {
-                            title: "Efter arrangementet",
-                            items: [
-                                "Ryd op i lokalet (affald, borde, stole)",
-                                "Sluk for teknik og returner udstyr",
-                                "Skriv opsamlingsmail og sikr slides fra underviser",
-                                "Send opsamlingsmail ud"
-                            ]
-                        }
-                    ],
-                    relatedLinks: [
-                        { title: "Forplejning - bestilling og info", targetId: 11 },
-                        { title: "Deltagerliste i KURSUS", targetId: 4 }
-                    ]
-                }
-            },
-            {
-                id: 4,
-                title: "Guide til deltagerliste i KURSUS",
-                category: "admin",
-                description: "Trin-for-trin guide til at trække deltagerlister fra KURSUS systemet",
-                tags: ["kursus", "deltagerliste", "excel"],
-                content: {
-                    sections: [
-                        {
-                            title: "Sådan trækker du en deltagerliste",
-                            steps: [
-                                "Åbn KURSUS og find arrangementet",
-                                "Vælg 'avanceret søgning' under fanen 'Modul' i værktøjslinjen",
-                                "Ryk vinduet en cm ned, så kursusnummeret er synligt",
-                                "Vælg 'Kursus deltagelse' i feltet 'søgetype'",
-                                "Udfyld kursusnummeret i 'Detailkursus Kode' (uden bindestreger)",
-                                "Skriv 'T' i feltet 'Tilmelding Status'",
-                                "Tryk 'Enter' på tastaturet",
-                                "Under fanen 'Fil' tryk 'Gem som'",
-                                "Gem filen som 'Excel12(*.xlsx) with headers'",
-                                "Navngiv filen 'Deltagerliste DATO'",
-                                "Åbn Excel-filen og formatér som tabel (blå, hvid og grå)",
-                                "Markér relevante felter (brug ctrl + Alt)",
-                                "Træk emails fra 'email' kolonnen (ctrl+shift+pil ned)",
-                                "Kopier og sæt ind i BCC i påmindelsesmailen"
-                            ]
-                        }
-                    ],
-                    relatedLinks: [
-                        { title: "Sådan sender du SMS", targetId: 5 },
-                        { title: "Tjekliste til webinarer", targetId: 2 }
-                    ]
-                }
-            },
-            {
-                id: 5,
-                title: "Guide til SMS i CPSMS",
-                category: "kommunikation",
-                description: "Komplet vejledning til at sende SMS til deltagere via CPSMS systemet",
-                tags: ["sms", "cpsms", "deltagere"],
-                content: {
-                    sections: [
-                        {
-                            title: "Trin-for-trin vejledning",
-                            steps: [
-                                "Træk ny deltagerliste fra KURSUS",
-                                "Find mobilnumre i mobilkolonne (kolonne V)",
-                                "Alfabetisér kolonnen for at sikre ingen numre mangler",
-                                "Kopier numre (ctrl+shift+pil ned) uden øverste linje",
-                                "Åbn et nyt Excel-ark og sæt numrene ind",
-                                "Gem som 'CSV (semikolonsepareret)(*.csv)' med navn 'smsliste DATO'",
-                                "Åbn CPSMS.dk og log ind",
-                                "Find 'GRUPPER' i værktøjslinjen",
-                                "Opret gruppe med navn+dato for sms",
-                                "Klik på importér-ikonet i gruppen",
-                                "Vælg din CSV-fil",
-                                "Hak af i 'kun danske numre' og klik 'IMPORTER'",
-                                "Gå til fanen 'SMS' og vælg 'GRUPPESMS'",
-                                "Ændr afsenderen fra 'HK Service' til 'HK'",
-                                "Skriv SMS-teksten",
-                                "Vælg modtagergruppe og ME SUPPORT",
-                                "Klik 'VIDERE TIL GODKENDELSE'",
-                                "Klik 'GODKEND UDSENDELSE'"
-                            ]
-                        }
-                    ],
-                    relatedLinks: [
-                        { title: "Eksempel på SMS-tekst", targetId: 8 },
-                        { title: "Deltagerliste i KURSUS", targetId: 4 }
-                    ]
-                }
-            },
-            {
-                id: 6,
-                title: "Mailskabelon til oplægsholder",
-                category: "kommunikation",
-                description: "Eksempel på bekræftelses-mail når du HAR talt med oplægsholder",
-                tags: ["mail", "oplægsholder", "skabelon"],
-                content: {
-                    sections: [
-                        {
-                            title: "Mailskabelon",
-                            text: `Hej [navn],
-
-Tak for en god samtale. Som aftalt skriver jeg for at opsummere vores aftale og sikre, at vi er enige om de praktiske detaljer.
-
-**Dato og tid**
-• [Dato], kl. [tidspunkt]
-
-**Titel**
-Nuværende titel, som evt. ændres: [titel]
-
-**Praktisk info på dagen**
-• Adresse: Svend Aukens Plads 11, 2300 København S
-• Når du ankommer, ring på tlf: 28433070, så kommer vi og henter dig
-• Kom i god tid, gerne 30 minutter før webinaret starter
-• Tag gerne tøj på uden for små mønstre eller helt hvidt – det fungerer ikke på skærmen
-
-**Afvikling og slides**
-• Webinaret afholdes via Zoom, og vi tager os af alt det praktiske
-• Vi byder medlemmerne velkommen og giver derefter ordet til dig
-• Vi har vedhæftet en PowerPoint-forside, som du gerne må bruge
-• Dine slides må du gerne sende senest dagen før
-
-**Beskrivelse**
-Du vil blive kontaktet af min kollega Rebekka, hvor I har en snak om indholdet. Hun er cc på denne mail.
-
-**Optagelse**
-Vi har aftalt at webinaret bliver optaget og efterfølgende sendt ud i en tidsbegrænset periode.
-
-**Pris**
-Vi har aftalt, at prisen er [beløb] uden moms.
-
-Vi tales ved, rigtig god dag!`
-                        }
-                    ],
-                    relatedLinks: [
-                        { title: "Booking af oplægsholder", targetId: 1 }
-                    ]
-                }
-            },
-            {
-                id: 7,
-                title: "Påmindelsesmail til online arrangement",
-                category: "kommunikation",
-                description: "Eksempel på dagen-før-mail til webinar deltagere",
-                tags: ["mail", "webinar", "zoom"],
-                content: {
-                    sections: [
-                        {
-                            title: "Emnefelt",
-                            text: "HK // [titel på webinar] // link til Zoom"
-                        },
-                        {
-                            title: "Mailtekst",
-                            text: `Hej!
-
-Vi glæder os til at byde dig velkommen i morgen til "[titel]".
-
-Det er kl. [xx-xx] på Zoom. Du kan logge på fra kl. [xx].
-
-Link til zoom: [link]
-Meeting ID: [id]
-Passcode: [code]
-
-**OBS!** Hvis du deltager fra en arbejdscomputer, kan Zoom blive blokeret pga. sikkerhedsindstillinger. Brug i stedet en privat enhed med mobil hotspot eller et andet Wi-Fi.
-
-**Zoom – sådan gør du:**
-Download Zoom inden webinaret: www.zoom.us/download
-
-Du kan også deltage via browser (Chrome, Safari, Edge) hvis download ikke er muligt.
-
-**Tablet eller telefon?**
-Du SKAL downloade Zoom app'en for at kunne deltage.
-
-**Lydindstillinger**
-Husk at klikke 'Join Audio' når du logger på.
-
-Driller teknikken? Ring til os på 2843 3070.
-
-Vi ses på skærmen!`
-                        }
-                    ],
-                    relatedLinks: [
-                        { title: "Tjekliste til webinarer", targetId: 2 }
-                    ]
-                }
-            },
-            {
-                id: 8,
-                title: "SMS-skabelon",
-                category: "kommunikation",
-                description: "Eksempel på SMS til deltagere",
-                tags: ["sms", "påmindelse"],
-                content: {
-                    sections: [
-                        {
-                            title: "SMS-tekst",
-                            text: `Hej! Vi glæder os til at se dig [DATO+tidspunkt] til [TITEL]
-
-Link til Zoom: [link]
-Meeting ID: [id]
-Passcode: [code]`
-                        }
-                    ],
-                    relatedLinks: [
-                        { title: "Guide til SMS i CPSMS", targetId: 5 }
-                    ]
-                }
-            },
-            {
-                id: 9,
-                title: "Opsamlingsmail efter arrangement",
-                category: "kommunikation",
-                description: "Skabelon til opsamlingsmail efter webinar eller fysisk arrangement",
-                tags: ["mail", "opfølgning", "slides"],
-                content: {
-                    sections: [
-                        {
-                            title: "Husk at vedhæfte",
-                            items: [
-                                "Slides fra arrangementet",
-                                "Program-pdf hvis relevant",
-                                "Ekstra materiale nævnt på arrangementet"
-                            ]
-                        },
-                        {
-                            title: "Mailtekst eksempel",
-                            text: `Hej!
-
-Tak, fordi du var med [titel]. Vi sender dig her [slides/materiale].
-
-Optagelsen finder du her: [link]
-
-[Skriv evt. gode pointer fra webinaret eller link til ekstra-materiale]
-
-**Hvis du vil se flere webinarer**
-Vi har vedhæftet programmet for de kommende måneder i denne mail.
-
-Her kan man fx se, at vi snart holder:
-• [Arrangement 1]
-• [Arrangement 2]
-• [Arrangement 3]
-
-Vi håber, vi ses ved igen snart!
-
-De bedste hilsner,
-[Dit navn]`
-                        }
-                    ],
-                    relatedLinks: [
-                        { title: "Tjekliste til webinarer", targetId: 2 },
-                        { title: "Tjekliste til fysiske arrangementer", targetId: 3 }
-                    ]
-                }
-            },
-            {
-                id: 10,
-                title: "Upload til Youtube",
-                category: "admin",
-                description: "Guide til at uploade og konfigurere webinar-optagelser på Youtube",
-                tags: ["youtube", "optagelse", "video"],
-                content: {
-                    sections: [
-                        {
-                            title: "Trin-for-trin guide",
-                            steps: [
-                                "Find optagelsen og klip den til (fjern evt. indflyvning)",
-                                "Gå til Youtube Studio i venstre værktøjslinje",
-                                "Tryk på 'Create' i øverste højre hjørne",
-                                "Klik på 'Upload videos'",
-                                "Upload din video",
-                                "Giv videoen en titel",
-                                "Skriv beskrivelse: '*webinar* holdt *DATO* samt oplægsholders navn'",
-                                "Tilføj beskrivelse af webinaret",
-                                "Vælg thumbnail (kan være auto-genereret)",
-                                "Vælg eller opret relevant playliste",
-                                "Klik af i 'No, it's not made for kids'",
-                                "Klik 'Next' to gange",
-                                "Når copyright-check er færdig, klik 'Next' igen",
-                                "Under 'visibility' vælg 'unlisted'",
-                                "Klik 'Save' for at gemme"
-                            ]
-                        }
-                    ],
-                    relatedLinks: [
-                        { title: "Tjekliste til webinarer", targetId: 2 }
-                    ]
-                }
-            },
-            {
-                id: 11,
-                title: "Forplejning - bestilling og info",
-                category: "fysisk",
-                description: "Guide til bestilling af forplejning til forskellige arrangementstyper",
-                tags: ["forplejning", "mad", "drikke"],
-                content: {
-                    sections: [
-                        {
-                            title: "Ansvarlig",
-                            text: "Emma er ansvarlig for booking af forplejning + lokale"
-                        },
-                        {
-                            title: "Almindelige fysiske kurser (17-20)",
-                            items: [
-                                "Kl. 16:45: Vand, kaffe og the",
-                                "Kl. 18: Måltidssalat (vegetar), sodavand, vand"
-                            ]
-                        },
-                        {
-                            title: "CV til samtale (9-15)",
-                            items: [
-                                "Kl. 8:45: Alm. croissant, kaffe og the, vand",
-                                "Kl. 12: Måltidssalat (vegetar), vand, sodavand - spises på 6. sal"
-                            ]
-                        },
-                        {
-                            title: "TechTirsdag (17-21)",
-                            items: [
-                                "Kl. 16:45: Kaffe og the (50%), vand",
-                                "Kl. 18: Dagens vegetar m. salat, sodavand, vand - spises på 6. sal",
-                                "Slik: Købes i Brugsen hvis man har tid"
-                            ]
-                        }
-                    ],
-                    relatedLinks: [
-                        { title: "Tjekliste til fysiske arrangementer", targetId: 3 }
-                    ]
-                }
-            },
-            {
-                id: 12,
-                title: "Personalepolitik - Sygdom",
-                category: "generelt",
-                description: "Procedure ved sygdom",
-                tags: ["sygdom", "procedure", "mail"],
-                content: {
-                    sections: [
-                        {
-                            title: "Ved sygdom",
-                            text: "Når man bliver syg, sender man en mail til mailgruppen 'service-medlemsengagement'"
-                        }
-                    ]
-                }
-            },
-            {
-                id: 13,
-                title: "SOME regler og design",
-                category: "kommunikation",
-                description: "Design guidelines for sociale medier posts",
-                tags: ["some", "design", "farver"],
-                content: {
-                    sections: [
-                        {
-                            title: "Farvekombinationer",
-                            text: "Diverse kurser skiftes mellem forskellige farvekombinationer. Ved fakta-opslag skal overskrift og ikon være i samme farve. Farven vælges ud fra temaet. Hvis ikke den har et tema, skal lilla farve bruges."
-                        },
-                        {
-                            title: "Kurser til kategori blå, grøn og rød",
-                            text: "Baggrundsbillede skal altid laves i S/H inden farve kommer over. Opslag 1 og 2 må gerne bruges som startbillede eller komme efter hinanden i opslaget."
-                        }
-                    ]
+                    relatedLinks: [],
+                    externalLinks: []
                 }
             }
         ];
@@ -1345,6 +976,15 @@ De bedste hilsner,
                     </div>
                 `;
             }
+
+            // External links
+            if (item.content.externalLinks && item.content.externalLinks.length > 0) {
+                contentHtml += '<div class="content-section"><h3>Links</h3>';
+                item.content.externalLinks.forEach(link => {
+                    contentHtml += `<a href="${link.url}" target="_blank" class="external-link">🔗 ${link.title}</a><br>`;
+                });
+                contentHtml += '</div>';
+            }
             
             if (item.content.relatedLinks && item.content.relatedLinks.length > 0) {
                 contentHtml += '<div class="related-links"><h3>Relaterede guides</h3>';
@@ -1373,20 +1013,6 @@ De bedste hilsner,
             document.body.style.overflow = 'auto';
         }
 
-        document.getElementById('searchInput').addEventListener('input', (e) => {
-            searchTerm = e.target.value;
-            renderCards();
-        });
-
-        document.querySelectorAll('.filter-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                currentFilter = btn.dataset.category;
-                renderCards();
-            });
-        });
-
         document.getElementById('modal').addEventListener('click', (e) => {
             if (e.target.id === 'modal') {
                 closeModal();
@@ -1404,7 +1030,10 @@ De bedste hilsner,
                 description: '',
                 tags: [],
                 content: {
-                    sections: []
+                    sections: [],
+                    relatedLinks: [],
+                    externalLinks: [],
+                    videoUrl: ''
                 }
             };
             
@@ -1414,12 +1043,12 @@ De bedste hilsner,
                 <h2>${isNew ? 'Ny guide' : 'Rediger guide'}</h2>
                 <form id="editorForm" onsubmit="saveItem(event, ${item.id}, ${isNew})">
                     <div class="form-group">
-                        <label>Titel</label>
-                        <input type="text" name="title" value="${item.title}" required>
+                        <label>📝 Titel</label>
+                        <input type="text" name="title" value="${item.title}" required placeholder="F.eks. Booking af oplægsholder">
                     </div>
                     
                     <div class="form-group">
-                        <label>Kategori</label>
+                        <label>📂 Kategori</label>
                         <select name="category" required>
                             <option value="webinar" ${item.category === 'webinar' ? 'selected' : ''}>Webinarer</option>
                             <option value="fysisk" ${item.category === 'fysisk' ? 'selected' : ''}>Fysiske arrangementer</option>
@@ -1430,12 +1059,12 @@ De bedste hilsner,
                     </div>
                     
                     <div class="form-group">
-                        <label>Beskrivelse</label>
-                        <textarea name="description" required>${item.description}</textarea>
+                        <label>📄 Beskrivelse</label>
+                        <textarea name="description" required placeholder="Kort beskrivelse af guiden">${item.description}</textarea>
                     </div>
                     
                     <div class="form-group">
-                        <label>Tags (tryk Enter for at tilføje)</label>
+                        <label>🏷️ Tags (tryk Enter for at tilføje)</label>
                         <div class="tags-input-container" id="tagsContainer">
                             ${item.tags.map(tag => `
                                 <span class="tag-item">
@@ -1443,16 +1072,36 @@ De bedste hilsner,
                                     <button type="button" onclick="removeTag(this)">×</button>
                                 </span>
                             `).join('')}
-                            <input type="text" id="tagInput" onkeydown="addTag(event)">
+                            <input type="text" id="tagInput" onkeydown="addTag(event)" placeholder="Tilføj tag...">
                         </div>
                     </div>
-                    
+
                     <div class="form-group">
-                        <label>Indhold (JSON format)</label>
-                        <textarea name="content" rows="15" required>${JSON.stringify(item.content, null, 2)}</textarea>
-                        <small style="color: var(--hk-gray); display: block; margin-top: 0.5rem;">
-                            Brug JSON format. Eksempel: {"sections": [{"title": "Titel", "items": ["Punkt 1", "Punkt 2"]}]}
+                        <label>🎥 YouTube Video URL (valgfrit)</label>
+                        <input type="url" name="videoUrl" value="${item.content.videoUrl || ''}" placeholder="https://www.youtube.com/embed/...">
+                        <small style="color: #6B6B6B; display: block; margin-top: 0.5rem;">
+                            Brug YouTube embed URL (højreklik på video → Kopier indlejringskode → brug URL'en)
                         </small>
+                    </div>
+                    
+                    <div class="section-builder">
+                        <h3 style="color: #0078D2; margin-bottom: 1rem;">📋 Sektioner</h3>
+                        <div id="sectionsContainer">
+                            ${renderSections(item.content.sections)}
+                        </div>
+                        <button type="button" class="add-section-btn" onclick="addSection()">➕ Tilføj sektion</button>
+                    </div>
+
+                    <div class="link-builder">
+                        <h3 style="color: #0078D2; margin-bottom: 1rem;">🔗 Eksterne links</h3>
+                        <div id="externalLinksContainer">
+                            ${renderExternalLinks(item.content.externalLinks || [])}
+                        </div>
+                        <div class="link-input-group">
+                            <input type="text" id="linkTitle" placeholder="Link titel, f.eks. Google Drive">
+                            <input type="url" id="linkUrl" placeholder="https://...">
+                            <button type="button" class="add-link-btn" onclick="addExternalLink()">➕ Tilføj link</button>
+                        </div>
                     </div>
                     
                     <div style="margin-top: 2rem;">
@@ -1465,6 +1114,125 @@ De bedste hilsner,
             modalBody.innerHTML = formHtml;
             modal.classList.add('active');
             document.body.style.overflow = 'hidden';
+        }
+
+        function renderSections(sections) {
+            if (!sections || sections.length === 0) return '';
+            
+            return sections.map((section, sIndex) => `
+                <div class="section-item" data-section-index="${sIndex}">
+                    <div class="section-header">
+                        <h4>Sektion ${sIndex + 1}</h4>
+                        <button type="button" class="remove-btn" onclick="removeSection(${sIndex})">Fjern</button>
+                    </div>
+                    <div class="form-group">
+                        <label>Titel</label>
+                        <input type="text" class="section-title" value="${section.title || ''}" placeholder="F.eks. Vigtige punkter">
+                    </div>
+                    <div class="form-group">
+                        <label>Tekst (valgfrit)</label>
+                        <textarea class="section-text" placeholder="Indledende tekst til sektionen">${section.text || ''}</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Punkter</label>
+                        ${(section.items || []).map((item, iIndex) => `
+                            <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                <input type="text" class="item-input" value="${item}" placeholder="Punkt ${iIndex + 1}">
+                                <button type="button" class="remove-btn" onclick="removeItem(${sIndex}, ${iIndex})">×</button>
+                            </div>
+                        `).join('')}
+                        <button type="button" class="add-item-btn" onclick="addItem(${sIndex})">➕ Tilføj punkt</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderExternalLinks(links) {
+            if (!links || links.length === 0) return '';
+            
+            return links.map((link, index) => `
+                <div class="link-list-item">
+                    <span>🔗 ${link.title} → ${link.url}</span>
+                    <button type="button" class="remove-btn" onclick="removeExternalLink(${index})">×</button>
+                </div>
+            `).join('');
+        }
+
+        function addSection() {
+            const container = document.getElementById('sectionsContainer');
+            const sIndex = container.children.length;
+            
+            const sectionHtml = `
+                <div class="section-item" data-section-index="${sIndex}">
+                    <div class="section-header">
+                        <h4>Sektion ${sIndex + 1}</h4>
+                        <button type="button" class="remove-btn" onclick="removeSection(${sIndex})">Fjern</button>
+                    </div>
+                    <div class="form-group">
+                        <label>Titel</label>
+                        <input type="text" class="section-title" placeholder="F.eks. Vigtige punkter">
+                    </div>
+                    <div class="form-group">
+                        <label>Tekst (valgfrit)</label>
+                        <textarea class="section-text" placeholder="Indledende tekst til sektionen"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Punkter</label>
+                        <button type="button" class="add-item-btn" onclick="addItem(${sIndex})">➕ Tilføj punkt</button>
+                    </div>
+                </div>
+            `;
+            
+            container.insertAdjacentHTML('beforeend', sectionHtml);
+        }
+
+        function removeSection(sIndex) {
+            const section = document.querySelector(`[data-section-index="${sIndex}"]`);
+            if (section) section.remove();
+        }
+
+        function addItem(sIndex) {
+            const section = document.querySelector(`[data-section-index="${sIndex}"]`);
+            const itemsContainer = section.querySelector('.form-group:last-child');
+            const button = itemsContainer.querySelector('.add-item-btn');
+            
+            const itemCount = itemsContainer.querySelectorAll('.item-input').length;
+            const itemHtml = `
+                <div style="display: flex; gap: 0.5rem; margin-bottom: 0.5rem;">
+                    <input type="text" class="item-input" placeholder="Punkt ${itemCount + 1}">
+                    <button type="button" class="remove-btn" onclick="this.parentElement.remove()">×</button>
+                </div>
+            `;
+            
+            button.insertAdjacentHTML('beforebegin', itemHtml);
+        }
+
+        function addExternalLink() {
+            const titleInput = document.getElementById('linkTitle');
+            const urlInput = document.getElementById('linkUrl');
+            
+            const title = titleInput.value.trim();
+            const url = urlInput.value.trim();
+            
+            if (!title || !url) {
+                alert('Udfyld både titel og URL');
+                return;
+            }
+
+            const container = document.getElementById('externalLinksContainer');
+            const index = container.children.length;
+            
+            const linkHtml = `
+                <div class="link-list-item" data-link='${JSON.stringify({title, url})}'>
+                    <span>🔗 ${title} → ${url}</span>
+                    <button type="button" class="remove-btn" onclick="this.parentElement.remove()">×</button>
+                </div>
+            `;
+            
+            container.insertAdjacentHTML('beforeend', linkHtml);
+            
+            titleInput.value = '';
+            urlInput.value = '';
         }
 
         function addTag(event) {
@@ -1501,14 +1269,27 @@ De bedste hilsner,
             const tags = Array.from(document.querySelectorAll('#tagsContainer .tag-item'))
                 .map(el => el.textContent.trim().replace('×', ''));
             
-            // Parse content JSON
-            let content;
-            try {
-                content = JSON.parse(formData.get('content'));
-            } catch (e) {
-                alert('Fejl i JSON format for indhold. Tjek syntaksen.');
-                return;
-            }
+            // Get sections
+            const sections = [];
+            document.querySelectorAll('.section-item').forEach(sectionEl => {
+                const title = sectionEl.querySelector('.section-title').value.trim();
+                const text = sectionEl.querySelector('.section-text').value.trim();
+                const items = Array.from(sectionEl.querySelectorAll('.item-input'))
+                    .map(input => input.value.trim())
+                    .filter(item => item !== '');
+                
+                if (title || text || items.length > 0) {
+                    sections.push({
+                        title: title,
+                        text: text,
+                        items: items
+                    });
+                }
+            });
+
+            // Get external links
+            const externalLinks = Array.from(document.querySelectorAll('#externalLinksContainer .link-list-item'))
+                .map(el => JSON.parse(el.dataset.link));
             
             const item = {
                 id: id,
@@ -1516,7 +1297,12 @@ De bedste hilsner,
                 category: formData.get('category'),
                 description: formData.get('description'),
                 tags: tags,
-                content: content
+                content: {
+                    sections: sections,
+                    relatedLinks: [],
+                    externalLinks: externalLinks,
+                    videoUrl: formData.get('videoUrl') || ''
+                }
             };
             
             if (isNew) {
@@ -1524,6 +1310,8 @@ De bedste hilsner,
             } else {
                 const index = knowledgeBase.findIndex(i => i.id === id);
                 if (index !== -1) {
+                    // Keep existing related links
+                    item.content.relatedLinks = knowledgeBase[index].content.relatedLinks || [];
                     knowledgeBase[index] = item;
                 }
             }
@@ -1532,7 +1320,7 @@ De bedste hilsner,
             closeModal();
             renderCards();
             
-            alert(isNew ? 'Ny guide er oprettet!' : 'Ændringer er gemt!');
+            alert(isNew ? '✅ Ny guide er oprettet!' : '✅ Ændringer er gemt!');
         }
 
         function deleteItem(id) {
@@ -1543,15 +1331,23 @@ De bedste hilsner,
                     saveData();
                     closeModal();
                     renderCards();
-                    alert('Guide er slettet!');
+                    alert('🗑️ Guide er slettet!');
                 }
             }
         }
 
-        document.getElementById('modal').addEventListener('click', (e) => {
-            if (e.target.id === 'modal') {
-                closeModal();
-            }
+        document.getElementById('searchInput').addEventListener('input', (e) => {
+            searchTerm = e.target.value;
+            renderCards();
+        });
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                currentFilter = btn.dataset.category;
+                renderCards();
+            });
         });
 
         renderCards();
